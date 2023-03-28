@@ -1,14 +1,20 @@
-// console.log(`hello word`);
+// const body = document.body;
 
-function outer() {
-  let count = 0;
+// const testElement = document.querySelector(`#test`)
+// const testElement2 = document.getElementById(`test`);
 
-  function inner() {
-    count++;
-    console.log(count);
-  }
+// // testElement.dataset.property = `22`;
 
-  return inner;
-}
+// console.log(testElement);
+// console.log(testElement2);
 
-const increment = outer();
+// body.style.backgroundColor = `yellow`;
+
+// console.log(document.body.style.background = `yellow`);
+
+// const property3 = document.querySelector(`[data-property='3']`);
+// console.log(property3);
+
+// const property3 = document.querySelector(`[data-property='3']`);
+// console.log(document.body.children);
+
