@@ -1,14 +1,17 @@
-// console.log(`hello word`);
+const rainbow = document.querySelector('.rainbow');
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
-function outer() {
-  let count = 0;
+let currentColor = colors[colors.length - 1];
+let currentElement = rainbow;
 
-  function inner() {
-    count++;
-    console.log(count);
-  }
-
-  return inner;
+while (currentColor) {
+  const newElement = document.createElement('div');
+  newElement.className = currentColor;
+  newElement.style.backgroundColor = currentColor;
+  
+  currentElement.appendChild(newElement);
+  currentElement = newElement;
+  currentColor = colors.pop();
 }
 
-const increment = outer();
+rainbow.removeChild(rainbow.children[0]);
