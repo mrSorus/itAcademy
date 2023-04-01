@@ -1,14 +1,29 @@
 // console.log(`hello word`);
 
-function outer() {
-  let count = 0;
+// function calc(a) {
+//   let sum = 0;
 
-  function inner() {
-    count++;
-    console.log(count);
-  }
+//   return function(b) {
+//     console.log(sum);
+//     sum = sum + b;
+//     return calc;
+//   }
+// }
+// calc(1)(2)(3);
 
-  return inner;
-}
+// const divElements = document.querySelectorAll(".test");
 
-const increment = outer();
+// const clickHandler = function(e){
+//   console.log(this);
+//   console.log(e);
+// }
+
+// divElements.forEach(el => {
+//   el.addEventListener('click', clickHandler)
+// })
+
+const root = document.querySelector('#parent');
+
+root.addEventListener("click", function (e){
+  console.log(e.target.dataset.property);
+})
