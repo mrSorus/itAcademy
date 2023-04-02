@@ -1,29 +1,34 @@
-// console.log(`hello word`);
-
-// function calc(a) {
-//   let sum = 0;
-
-//   return function(b) {
-//     console.log(sum);
-//     sum = sum + b;
-//     return calc;
-//   }
-// }
-// calc(1)(2)(3);
-
-// const divElements = document.querySelectorAll(".test");
-
-// const clickHandler = function(e){
-//   console.log(this);
-//   console.log(e);
-// }
-
-// divElements.forEach(el => {
-//   el.addEventListener('click', clickHandler)
-// })
-
-const root = document.querySelector('#parent');
-
-root.addEventListener("click", function (e){
-  console.log(e.target.dataset.property);
-})
+const data = [
+	{
+		type: "input",
+		id: "name",
+		value: "",
+		placeholder: "name",
+	},
+	{
+		type: "input",
+		id: "surname",
+		value: "",
+		placeholder: "surname",
+	},
+	{
+		type: "date",
+		id: "birthday",
+		value: "",
+		placeholder: "date of birth",
+	},
+	{
+		type: "toggle",
+		id: "sex",
+		value: "man",
+		options: ["man", "woman"],
+		placeholder: "sex",
+	},
+	{
+		type: "checkbox",
+		id: "time",
+		value: "",
+		options: ["9-10 AM", "11-102 AM", "1-2 PM", "3-4 PM", "5-6 PM"],
+		placeholder: "select timeslot for assessment",
+	},
+];
