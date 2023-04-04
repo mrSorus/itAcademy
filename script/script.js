@@ -8,3 +8,32 @@
 // 4. создаем кнопку с обработчиками
 // 5. добавляем элементы в форму
 
+// const input = document.querySelector("#text");
+// const checkbox = document.querySelector("#checkbox");
+
+// document.addEventListener('change', (e) => {
+//   console.log(e.target.value);
+// })
+
+// const elements = document.querySelectorAll('body *');
+
+// elements.forEach(element => {
+// element.addEventListener('click', (e) => {
+//   console.log(e.currentTarget);
+// })
+// });
+
+const root = document.querySelector('#parent');
+const body = document.body;
+
+root.addEventListener('click', () => {
+  alert('hello')
+})
+
+body.addEventListener('click', (e) => {
+  root.dispatchEvent(customClick);
+})
+
+const customClick = new Event('click')
+
+// root.dispatchEvent(customClick);
