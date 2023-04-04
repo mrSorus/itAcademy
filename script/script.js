@@ -1,20 +1,10 @@
-// const body = document.body;
-
-// const testElement = document.querySelector(`#test`)
-// const testElement2 = document.getElementById(`test`);
-
-// // testElement.dataset.property = `22`;
-
-// console.log(testElement);
-// console.log(testElement2);
-
-// body.style.backgroundColor = `yellow`;
-
-// console.log(document.body.style.background = `yellow`);
-
-// const property3 = document.querySelector(`[data-property='3']`);
-// console.log(property3);
-
-// const property3 = document.querySelector(`[data-property='3']`);
-// console.log(document.body.children);
+// 1. создать пустую форму
+// 2. перебрать массив данных, создать массив для новых элементов
+// 3. на каждой итерации создать элемент формы
+// - поле type - определяет тип документа
+// - id - id и name 
+// - value - его текущее значение
+// - options - доступные опции (несколько элементов)
+// 4. создаем кнопку с обработчиками
+// 5. добавляем элементы в форму
 
