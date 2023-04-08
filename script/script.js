@@ -8,6 +8,9 @@
 // 4. создаем кнопку с обработчиками
 // 5. добавляем элементы в форму
 
+
+// const { log } = require("console")
+
 // const input = document.querySelector("#text");
 // const checkbox = document.querySelector("#checkbox");
 
@@ -24,7 +27,7 @@
 // });
 
 // const root = document.querySelector('#parent');
-const body = document.body;
+// const body = document.body;
 
 // root.addEventListener('click', (e) => {
 //   console.log(e)
@@ -44,11 +47,12 @@ const body = document.body;
 
 // root.dispatchEvent(customClick);
 
-body.addEventListener("click", (event) => {
-  const x = event.clientX;
-  const y = event.clientY;
-  const heigt = event.target.offsetHeight;
-  const wight = event.target.offsetWidth;
-  console.log(wight, heigt);
-  console.log("Координаты клика мышью: " + x + ", " + y);
-});
+// body.addEventListener("click", (event) => {
+//   const x = event.clientX;
+//   const y = event.clientY;
+//   const heigt = event.target.offsetHeight;
+//   const wight = event.target.offsetWidth;
+//   console.log(wight, heigt);
+//   console.log("Координаты клика мышью: " + x + ", " + y);
+// });
+
