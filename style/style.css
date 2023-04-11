@@ -1,3 +1,4 @@
+
 /* Стили для всей формы */
 .form-style{
 	display: flex;
@@ -23,7 +24,7 @@
  
  /* Стили для полей ввода */
  input[name="name"],
- input[name="surname"],
+ input[type="surname"],
  input[type="date"],
  input[type="radio"],
  input[type="checkbox"] {
